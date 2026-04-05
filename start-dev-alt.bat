@@ -1,0 +1,6 @@
+@echo off
+echo Starting SRP Airconditioning Website Development Server...
+echo.
+echo Using npm scripts...
+call npm run dev
+pause

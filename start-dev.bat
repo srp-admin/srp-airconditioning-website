@@ -1,0 +1,9 @@
+@echo off
+echo Starting SRP Airconditioning Website Development Server...
+echo.
+echo Installing dependencies first...
+npm install
+echo.
+echo Starting development server...
+npx next dev
+pause
