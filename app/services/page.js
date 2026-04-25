@@ -16,6 +16,8 @@ export default function Services() {
         "Performance testing and optimization",
         "Operator training and documentation"
       ],
+      image: "/images/services/chiller-installation.jpg",
+      alt: "Bluestar chiller installation process",
       color: "blue"
     },
     {
@@ -29,6 +31,8 @@ export default function Services() {
         "Refrigerant level checks",
         "Detailed maintenance reports"
       ],
+      image: "/images/services/chiller-maintenance.jpg",
+      alt: "Bluestar chiller preventive maintenance",
       color: "green"
     },
     {
@@ -42,12 +46,16 @@ export default function Services() {
         "Temporary cooling solutions",
         "Post-repair testing and validation"
       ],
+      image: "/images/services/chiller-repair.jpg",
+      alt: "Bluestar chiller emergency repair service",
       color: "red"
     },
     {
       icon: Shield,
       title: "Chiller Overhauling",
       description: "Complete system refurbishment and overhauling to extend the life and improve efficiency of aging chillers.",
+      image: "/images/services/chiller-overhauling.jpg",
+      alt: "Bluestar chiller overhauling service",
       features: [
         "Complete system disassembly",
         "Component inspection and testing",
@@ -61,6 +69,8 @@ export default function Services() {
       icon: Users,
       title: "Spare Parts Supply",
       description: "Genuine and high-quality spare parts for all major chiller brands with warranty assurance and quick delivery.",
+      image: "/images/services/chiller-spare-parts.jpg",
+      alt: "Bluestar chiller spare parts inventory",
       features: [
         "Genuine OEM parts",
         "Comprehensive inventory",
@@ -74,6 +84,8 @@ export default function Services() {
       icon: TrendingUp,
       title: "Energy Audits",
       description: "Comprehensive energy audits to optimize chiller performance, reduce operational costs, and improve efficiency.",
+      image: "/images/services/chiller-energy-audit.jpg",
+      alt: "Bluestar chiller energy audit process",
       features: [
         "Energy consumption analysis",
         "Performance evaluation",
@@ -137,18 +149,29 @@ export default function Services() {
               const Icon = service.icon
               const colors = getColorClasses(service.color)
               return (
-                <div key={index} className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow">
-                  <div className="p-8">
-                    <div className={`w-16 h-16 ${colors.bg} rounded-xl flex items-center justify-center mb-6`}>
-                      <Icon className={`w-8 h-8 ${colors.icon}`} />
+                <div key={index} className="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow overflow-hidden">
+                  <div className="relative h-48 bg-gradient-to-br from-primary-100 to-primary-50">
+                    <img 
+                      src={service.image} 
+                      alt={service.alt}
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                    <div className="absolute bottom-2 left-2 text-white">
+                      <p className="text-sm font-semibold">{service.title}</p>
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h3>
-                    <p className="text-gray-600 mb-6">{service.description}</p>
-                    <div className="space-y-3 mb-6">
+                    <div className="absolute top-2 right-2 bg-primary-600 text-white px-2 py-1 rounded text-xs font-semibold">
+                      {service.title}
+                    </div>
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
+                    <p className="text-gray-600 mb-4">{service.description}</p>
+                    <div className="space-y-2 mb-6">
                       {service.features.map((feature, featureIndex) => (
-                        <div key={featureIndex} className="flex items-start space-x-3">
-                          <CheckCircle className="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" />
-                          <span className="text-gray-700">{feature}</span>
+                        <div key={featureIndex} className="flex items-start space-x-2">
+                          <CheckCircle className="w-4 h-4 text-primary-600 flex-shrink-0 mt-0.5" />
+                          <span className="text-gray-700 text-sm">{feature}</span>
                         </div>
                       ))}
                     </div>

@@ -1,7 +1,8 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import ChillerBanners from '../components/ChillerBanners'
 import Link from 'next/link'
-import { ArrowRight, Phone, Mail, Clock, CheckCircle, Wrench, Shield, Zap, Users, Award, TrendingUp } from 'lucide-react'
+import { ArrowRight, Phone, Mail, Clock, CheckCircle, Wrench, Shield, Zap, Users, Award, TrendingUp, Building, Globe } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -22,9 +23,6 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/contact" className="btn-primary bg-white text-primary-600 hover:bg-gray-100">
                   Get Free Quote
-                </Link>
-                <Link href="/services" className="btn-secondary border-white text-white hover:bg-white hover:text-primary-600">
-                  Our Services
                 </Link>
               </div>
               <div className="flex items-center space-x-6 mt-8">
@@ -59,6 +57,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Chiller Banners */}
+      <ChillerBanners />
 
       {/* About Section */}
       <section className="bg-gray-50">
@@ -234,6 +235,62 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Our Partners Section */}
+      <section className="bg-white">
+        <div className="container-custom section-padding">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Our Partners
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              We collaborate with leading industry partners to deliver comprehensive chiller solutions and exceptional service quality.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="bg-gray-50 rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+              <div className="w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Building className="w-10 h-10 text-primary-600" />
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Bluestar</h3>
+              <p className="text-gray-600 text-sm">
+                Authorized service partner for Bluestar industrial chillers and cooling systems
+              </p>
+            </div>
+            
+            <div className="bg-gray-50 rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+              <div className="w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Globe className="w-10 h-10 text-primary-600" />
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Daikin</h3>
+              <p className="text-gray-600 text-sm">
+                Certified service provider for Daikin commercial and industrial chiller systems
+              </p>
+            </div>
+            
+            <div className="bg-gray-50 rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+              <div className="w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Building className="w-10 h-10 text-primary-600" />
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">York</h3>
+              <p className="text-gray-600 text-sm">
+                Official service partner for York industrial chiller systems and HVAC solutions
+              </p>
+            </div>
+            
+            <div className="bg-gray-50 rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+              <div className="w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Globe className="w-10 h-10 text-primary-600" />
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Carrier</h3>
+              <p className="text-gray-600 text-sm">
+                Certified service provider for Carrier commercial chiller and cooling solutions
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="bg-primary-600 text-white">
         <div className="container-custom section-padding">
@@ -248,10 +305,6 @@ export default function Home() {
               <Link href="/contact" className="btn-primary bg-white text-primary-600 hover:bg-gray-100">
                 Contact Us Now
               </Link>
-              <a href="tel:+919876543210" className="btn-secondary border-white text-white hover:bg-white hover:text-primary-600">
-                <Phone className="w-4 h-4 inline mr-2" />
-                Call: +91 99110 04723
-              </a>
             </div>
           </div>
         </div>
