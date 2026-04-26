@@ -29,24 +29,28 @@ public/
 **Size**: 800x400px recommended
 **Format**: JPG or PNG
 
-1. **bluestar-screw-chiller.jpg**
-   - Content: Bluestar industrial chiller
+1. **screw-chiller.jpg**
+   - Content: Industrial screw chiller system
    - Style: Professional, clean shot
 
-2. **daikin-screw-chiller.jpg**
-   - Content: Daikin industrial chiller
+2. **centrifugal-chiller.jpg**
+   - Content: Centrifugal chiller system
    - Style: Professional, clean shot
 
-3. **york-screw-chiller.jpg**
-   - Content: York industrial chiller
+3. **process-chiller.jpg**
+   - Content: Industrial process chiller
    - Style: Professional, clean shot
 
-4. **carrier-screw-chiller.jpg**
-   - Content: Carrier industrial chiller
+4. **reciprocating-chiller.jpg**
+   - Content: Reciprocating chiller system
    - Style: Professional, clean shot
 
-5. **voltas-screw-chiller.jpg**
-   - Content: Voltas commercial chiller
+5. **aircooled-chiller.jpg**
+   - Content: Air-cooled chiller unit
+   - Style: Professional, clean shot
+
+6. **watercooled-chiller.jpg**
+   - Content: Water-cooled chiller system
    - Style: Professional, clean shot
 
 ### Service Images (Services page)

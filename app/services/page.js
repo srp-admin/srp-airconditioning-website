@@ -158,10 +158,9 @@ export default function Services() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                     <div className="absolute bottom-2 left-2 text-white">
-                      <p className="text-sm font-semibold">{service.title}</p>
-                    </div>
-                    <div className="absolute top-2 right-2 bg-primary-600 text-white px-2 py-1 rounded text-xs font-semibold">
-                      {service.title}
+                      <div className="bg-primary-600 text-white px-2 py-1 rounded text-xs font-semibold">
+                        {service.title}
+                      </div>
                     </div>
                   </div>
                   <div className="p-6">
@@ -354,10 +353,6 @@ export default function Services() {
               <Link href="/contact" className="btn-primary bg-white text-primary-600 hover:bg-gray-100">
                 Get Free Quote
               </Link>
-              <a href="tel:+919876543210" className="btn-secondary border-white text-white hover:bg-white hover:text-primary-600">
-                <Phone className="w-4 h-4 inline mr-2" />
-                Call: +91 99110 04723
-              </a>
             </div>
           </div>
         </div>
