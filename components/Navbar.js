@@ -41,7 +41,7 @@ export default function Navbar() {
               Contact Us
             </Link>
             <div className="flex items-center space-x-4 ml-8">
-              <a href="tel:+919876543210" className="flex items-center text-primary-600 hover:text-primary-700">
+              <a href="tel:+919911004723" className="flex items-center text-primary-600 hover:text-primary-700">
                 <Phone className="w-4 h-4 mr-1" />
                 <span className="font-semibold">+91 99110 04723</span>
               </a>
@@ -79,9 +79,9 @@ export default function Navbar() {
                 Contact Us
               </Link>
               <div className="flex items-center space-x-4 pt-4 border-t">
-                <a href="tel:+919876543210" className="flex items-center text-primary-600">
+                <a href="tel:+919911004723" className="flex items-center text-primary-600">
                   <Phone className="w-4 h-4 mr-1" />
-                  <span className="font-semibold">+91 98765 43210</span>
+                  <span className="font-semibold">+91 9911004723</span>
                 </a>
               </div>
             </div>

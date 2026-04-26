@@ -1,0 +1,19 @@
+Home Page
+	Chillers Images
+	Privacy Policy (Needed or Not)
+	Terms & Condition (Needed or Not)
+	Hide Industries Section for now
+About Us Page
+	Mission
+	Vision
+	Values
+	Images of Sonu & Harit
+	Text on Sonu ad Harit
+Services
+	Image should pop up on click on each service
+Contact Us
+	Phone number on this page and other pages
+	Emails on this page and other pages
+	Implement Send message functionality to send email to srpasales@gmail.com & an acknowledgement email to who have submitted the request.
+Remove Industries page link from all screens
+Industries Page
